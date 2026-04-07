@@ -1,9 +1,6 @@
 from fastapi import APIRouter, Query
 from app.services.external_api_service import (
-    search_drug_info_by_name,
-    get_dur_item_info,
-    get_dur_ingredient_info,
-)
+    search_drug_info_by_name)
 
 router = APIRouter(prefix="/external", tags=["External APIs"])
 
